@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+*{
+  user-select: none;
+  font-family: 'Raleway', sans-serif;
+}
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -10,4 +16,210 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+.fa:hover {
+  opacity: 0.7;
+}
+.fa-twitter {
+  color: #00acee;
+}
+.fa-linkedin{
+  color: #0072b1;
+}
+.fa-instagram{
+  color: #8a3ab9;
+}
+.fa-snapchat-ghost{
+  color: rgb(196, 154, 255);
+}
+
+@media only screen and (max-width:575px){
+  .myname{
+    font-size: 5.5vw;
+  }
+  .myoccupation{
+    font-size: 4.5vw;
+  }
+  #navigation{
+    font-size: 3.75vw;
+  }
+  .myskills{
+    font-size: 5.5vw;
+  }
+  .skills{
+    font-size: 3vw;
+  }
+  th{
+    font-size: 3.5vw;
+  }
+  td{
+    font-size: 3vw;
+  }
+  .footer{
+    font-size: 0.5vw;
+  }
+  .wave-bg{
+    width: auto;
+  }
+  .wave-bg-dark{
+    width: auto;
+  }
+}
+.nav-container{
+  background-color: #f5f5f5;
+}
+a{
+  cursor: pointer;
+}
+.table a{
+  color: black;
+  text-decoration: none;
+}
+
+.link{
+  color: black;
+}
+
+/* ----------image ani------------ */
+.img-wrapper{
+  margin-left:11%;
+  max-width: 300px;
+  min-width: 300px;
+  position: relative;
+}
+.img-wrapper img{
+  width: 100%;
+  display: block;
+  border-radius: 50%;
+}
+.img-wrapper::before{
+  content: '';
+  position: absolute;
+  inset: -15px;
+  border: 6px solid #242329;
+  border-top-color:white ;
+  border-bottom-color:white ;
+  border-radius: 50%;
+  /* z-index: 1; */
+  animation: Spin 5s linear infinite;
+}
+@keyframes Spin {
+  to{transform: rotate(360deg);}
+}
+
+
+.body{
+  background: white;
+  color: black;
+}
+.body-dark{
+  background-color: #242329;
+  color: white;
+}
+.body-dark a{
+  color: white;
+}
+.bootstrap-dark{
+  border-top: 2px solid #454d55;
+  background-color: #242329;
+  border-radius: 0;
+  border-bottom: 2px solid #454d55;
+  /* box-sizing: border-box; */
+  box-shadow: 0 14px 28px , skyblue 0 10px 10px skyblue;
+}
+
+.myc{
+  background-color: #454d55;
+}
+
+.myName{
+  /* font-family: 'Dancing Script', cursive; */
+  font-family: 'Lobster', cursive;
+  font-weight: 100;
+}
+h2{
+  font-family: 'Lobster', cursive;
+}
+.cover{
+  padding-top: 10px;
+  padding-bottom: 15px;
+  min-width: 100%;
+}
+.myColor{
+  background: #f4f6f8;
+}
+.wave-bg{
+  display: block;
+  height: 220px;
+  width: 100%;
+  /* min-width: 300px; */
+  transform-origin: top;
+  animation: animateWave 2000ms cubic-bezier(.23,1,.32,1) forwards;
+  background-image: url('https://demo.templateflip.com/super/images/wave-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+}
+.wave-bg-dark{
+  display: block;
+  height: 220px;
+  width: 100%;
+  /* min-width: 600px; */
+  transform-origin: top;
+  animation: animateWave 2000ms cubic-bezier(.23,1,.32,1) forwards;
+  background-image: url('https://demo.templateflip.com/super/images/wave-bg.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  filter: invert(100%);
+}
+.mydark{
+  background: rgb(9,7,8);
+}
+.footer{
+  padding: 70px;
+}
+.footer .darkgit{
+  filter: invert(100%);
+}
+.tooltip{
+  /* visibility: hidden; */
+  width: 120px;
+  color: #fff;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+.tooltip{
+  visibility: visible;
+}
+.myNav{
+  background: #f4f6f8;
+  width: 100%;
+  padding: 10px;
+
+}
+.myNav-dark{
+  width: 100%;
+  background:#0a0909;
+  padding: 10px;
+}
+.progresses{
+  width: 500px;
+  height: 20px;
+}
+.progresses2{
+  width: 500px;
+  height: 20px;
+  margin-left: 50px;
+}
+.my-container{
+  display: flex;
+  justify-content: space-around;
 }
